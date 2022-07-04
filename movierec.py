@@ -28,7 +28,12 @@ def pred_movies(movie_name):
     return pred
 
 
-mov_name = input('Enter Full Movie name ')
+print("\n")
+print("Welcome to movie recommendation System")
+
+print("\n")
+
+mov_name = input('Enter Full Movie name of your fav. movie ....\n')
 p = pred_movies(mov_name)
 p.drop('corr', inplace=True, axis=1)
 # p.drop('no of rating', inplace=True, axis=1)
@@ -41,3 +46,5 @@ print("\n")
 
 print("Suggestion 2")
 print(p.iloc[2])
+print("\n")
+print("\n")
